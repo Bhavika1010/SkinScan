@@ -1,0 +1,45 @@
+.bar {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.875rem 1.25rem;
+  border-radius: var(--radius);
+  min-width: 80px;
+  flex: 1;
+}
+.num {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.75rem;
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+.label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+.scanned { background: var(--white); box-shadow: var(--shadow); }
+.scanned .num { color: var(--ink); }
+.scanned .label { color: var(--ink-soft); }
+.danger { background: var(--red-lt); }
+.danger .num { color: var(--red); }
+.danger .label { color: var(--red); }
+.ok { background: var(--sage-lt); }
+.ok .num { color: var(--sage); }
+.ok .label { color: var(--sage); }
+.good { background: var(--sage-lt); }
+.good .num { color: var(--sage); }
+.good .label { color: var(--sage); }
+.warn { background: var(--amber-lt); }
+.warn .num { color: var(--amber); }
+.warn .label { color: var(--amber); }
+.unknown { background: var(--sand); }
+.unknown .num { color: var(--ink-mid); }
+.unknown .label { color: var(--ink-mid); }

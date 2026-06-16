@@ -1,0 +1,83 @@
+# SkinScan — Skincare Ingredient Checker
+
+A full-stack web app that scans any skincare ingredient list and flags pore-cloggers,
+irritants, beneficial actives, and heavy/low-porosity ingredients.
+
+**Stack:** Python Flask (backend) + React + Vite (frontend)
+
+---
+
+## Quick Start
+
+You need **Python 3.8+** and **Node.js 18+** installed.
+
+### 1. Backend (Flask API)
+
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
+```
+
+Backend runs at: http://localhost:5000
+
+### 2. Frontend (React)
+
+Open a second terminal:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend runs at: http://localhost:5173
+
+Open http://localhost:5173 in your browser.
+
+---
+
+## Project Structure
+
+```
+ingredient-checker/
+├── backend/
+│   ├── app.py               Flask API
+│   ├── ingredients.json     Ingredient database (60+ entries)
+│   └── requirements.txt
+├── frontend/
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── components/
+│   │   │   ├── Header.jsx
+│   │   │   ├── IngredientInput.jsx
+│   │   │   ├── SummaryBar.jsx
+│   │   │   ├── ResultSection.jsx
+│   │   │   └── RatingBar.jsx
+│   │   └── utils/
+│   │       └── api.js
+│   ├── index.html
+│   └── vite.config.js       (proxies /api → localhost:5000)
+└── README.md
+```
+
+## API
+
+**POST /api/check**
+```json
+{ "ingredients": "Water, Glycerin, Coconut Oil, Niacinamide, Fragrance" }
+```
+
+Returns:
+```json
+{
+  "total": 5,
+  "comedogenic": [...],
+  "irritants": [...],
+  "beneficial": [...],
+  "low_porosity_warning": [...],
+  "unrecognized": [...]
+}
+```
+
+**GET /api/health** — check server status

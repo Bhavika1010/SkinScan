@@ -1,0 +1,15 @@
+.wrap { display: flex; align-items: center; gap: 3px; }
+.block {
+  width: 18px; height: 8px;
+  border-radius: 3px;
+}
+.empty { background: var(--sand); }
+.r1, .r2 { background: var(--amber); }
+.r3 { background: #D4783C; }
+.r4, .r5 { background: var(--red); }
+.label {
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  margin-left: 4px;
+  font-weight: 600;
+}

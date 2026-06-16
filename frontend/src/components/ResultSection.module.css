@@ -1,0 +1,103 @@
+.sections { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.section {}
+.sectionTitle {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.red    { color: var(--red); }
+.amber  { color: var(--amber); }
+.sage   { color: var(--sage); }
+.soft   { color: var(--ink-soft); }
+
+.list { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.card {
+  border-radius: 10px;
+  padding: 0.875rem 1rem;
+  border-left: 3px solid transparent;
+}
+.cardRed       { background: var(--red-lt);   border-left-color: var(--red); }
+.cardAmber     { background: var(--amber-lt); border-left-color: var(--amber); }
+.cardSage      { background: var(--sage-lt);  border-left-color: var(--sage); }
+.cardAmberLight { background: #FDF6EE; border-left-color: #D4A94A; }
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.nameWrap { display: flex; align-items: baseline; gap: 0.4rem; }
+.name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+.alias {
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.reason {
+  font-size: 0.815rem;
+  color: var(--ink-mid);
+  line-height: 1.55;
+}
+
+.badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  padding: 2px 7px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.badge_high   { background: var(--red);   color: var(--white); }
+.badge_medium { background: var(--amber); color: var(--white); }
+.badge_low    { background: var(--sand);  color: var(--ink-mid); }
+
+.tagHeavy {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: #EDD9B8;
+  color: #7A5220;
+}
+
+.unknownGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+.unknownChip {
+  font-size: 0.8rem;
+  background: var(--sand);
+  color: var(--ink-mid);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+.unknownNote {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.disclaimer {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  padding-top: 1rem;
+  border-top: 1px solid var(--sand);
+  line-height: 1.6;
+}

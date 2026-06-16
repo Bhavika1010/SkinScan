@@ -1,0 +1,80 @@
+.card {
+  background: #fff;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card.comedogenic { border-color: var(--red); background: #fff; }
+.card.irritant    { border-color: var(--amber); background: #fff; }
+.card.beneficial  { border-color: var(--green); background: #fff; }
+.card.lp          { border-color: var(--teal); background: #fff; }
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.badge[data-type="comedogenic"]      { background: var(--red-light);   color: var(--red); }
+.badge[data-type="irritant-high"]    { background: var(--red-light);   color: var(--red); }
+.badge[data-type="irritant-medium"]  { background: var(--amber-light); color: var(--amber); }
+.badge[data-type="irritant-low"]     { background: var(--stone-light); color: var(--stone); }
+.badge[data-type="beneficial"]       { background: var(--green-light); color: var(--green); }
+.badge[data-type="lp"]               { background: var(--teal-light);  color: var(--teal); }
+
+.name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.alias {
+  font-size: 0.75rem;
+  color: var(--stone);
+  font-style: italic;
+}
+
+.reason {
+  font-size: 0.82rem;
+  color: var(--stone);
+  line-height: 1.5;
+}
+
+/* Comedogenicity bar */
+.comedoBar {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.block {
+  width: 20px;
+  height: 6px;
+  border-radius: 2px;
+}
+
+.block.high  { background: var(--red); }
+.block.mid   { background: var(--amber); }
+.block.low   { background: var(--green); }
+.block.empty { background: var(--stone-light); }
+
+.comedoNum {
+  font-size: 0.72rem;
+  color: var(--stone);
+  margin-left: 5px;
+}

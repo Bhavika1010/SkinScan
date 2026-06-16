@@ -1,0 +1,76 @@
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+.cardHeader {
+  margin-bottom: 1.25rem;
+}
+.title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.35rem;
+  color: var(--ink);
+  margin-bottom: 0.35rem;
+}
+.sub {
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+.textarea {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 1.5px solid var(--sand);
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--ink);
+  background: var(--cream);
+  resize: vertical;
+  transition: border-color 0.2s;
+  line-height: 1.6;
+}
+.textarea:focus {
+  outline: none;
+  border-color: var(--blush);
+  background: var(--white);
+}
+.textarea::placeholder { color: var(--ink-soft); }
+.textarea:disabled { opacity: 0.6; }
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  justify-content: flex-end;
+}
+.sampleBtn {
+  padding: 0.6rem 1.2rem;
+  border: 1.5px solid var(--sand);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--ink-mid);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+.sampleBtn:hover { border-color: var(--blush); color: var(--rose); }
+.sampleBtn:disabled { opacity: 0.5; cursor: not-allowed; }
+.submitBtn {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--rose);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+  letter-spacing: 0.01em;
+}
+.submitBtn:hover:not(:disabled) { background: var(--ink); }
+.submitBtn:disabled { opacity: 0.5; cursor: not-allowed; }

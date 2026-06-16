@@ -1,0 +1,132 @@
+.panel {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.labelRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--charcoal);
+}
+
+.hint {
+  font-size: 0.75rem;
+  color: var(--stone);
+}
+
+.textareaWrap {
+  position: relative;
+}
+
+.textarea {
+  width: 100%;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px 40px 14px 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--charcoal);
+  background: var(--cream);
+  resize: vertical;
+  transition: border-color 0.15s;
+  line-height: 1.6;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--sage);
+  background: #fff;
+}
+
+.textarea::placeholder {
+  color: #bbb;
+}
+
+.clearBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--stone-light);
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--stone);
+  transition: background 0.15s;
+}
+
+.clearBtn:hover { background: var(--border); }
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sampleBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 9px 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: var(--stone);
+  transition: all 0.15s;
+}
+
+.sampleBtn:hover:not(:disabled) {
+  border-color: var(--sage-mid);
+  color: var(--sage);
+  background: var(--sage-light);
+}
+
+.sampleBtn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.analyzeBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--sage);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 10px 22px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+  transition: background 0.15s, opacity 0.15s;
+  margin-left: auto;
+}
+
+.analyzeBtn:hover:not(:disabled) { background: #5a6a4e; }
+.analyzeBtn:disabled { opacity: 0.55; cursor: not-allowed; }
+
+.spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }

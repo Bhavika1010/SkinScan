@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bars {
+  display: flex;
+  gap: 3px;
+}
+
+.bar {
+  width: 14px;
+  height: 6px;
+  border-radius: 2px;
+  transition: opacity 0.2s;
+}
+
+.filled.high  { background: #C4614A; }
+.filled.mid   { background: #D4A843; }
+.filled.low   { background: #7FA87A; }
+
+.empty { background: var(--border); }
+
+.label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.label.high { color: #C4614A; }
+.label.mid  { color: #B08A2A; }
+.label.low  { color: #4A6741; }

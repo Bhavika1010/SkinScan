@@ -1,0 +1,31 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cream:    #fff0f3;
+  --sand:     #f7cad0;
+  --blush:    #ff5c8a;
+  --rose:     #c9184a;
+  --rose-dark: #a4133c;
+  --sage:     #7A8C6E;
+  --sage-lt:  #EBF0E7;
+  --amber:    #C4873A;
+  --amber-lt: #FDF2E3;
+  --red:      #B84040;
+  --red-lt:   #FCEAEA;
+  --ink:      #222222;
+  --ink-mid:  #333333;
+  --ink-soft: #666666;
+  --white:    #FFFFFF;
+  --radius:   12px;
+  --shadow:   0 2px 16px rgba(42,35,32,0.08);
+}
+
+html { font-size: 16px; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
