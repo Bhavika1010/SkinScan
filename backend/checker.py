@@ -2,7 +2,7 @@ import json
 import os
 import re
 
-DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "ingredients.json")
+DATA_PATH = os.path.join(os.path.dirname(__file__), "ingredients.json")
 
 
 def load_database():
